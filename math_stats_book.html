@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>統計学学習のためのテキスト紹介</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Takaaki Kishida" />
+    <link href="math_stats_book_files/remark-css-0.0.1/default.css" rel="stylesheet" />
+    <link href="math_stats_book_files/remark-css-0.0.1/metropolis.css" rel="stylesheet" />
+    <link href="math_stats_book_files/remark-css-0.0.1/metropolis-fonts.css" rel="stylesheet" />
+    <link rel="stylesheet" href="my-css.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# 統計学学習のためのテキスト紹介
+## 統計学・確率論・線形代数・微積
+### Takaaki Kishida
+### Winter 2020
+
+---
+
+class: inverse, middle
+
+
+
+&lt;style type="text/css"&gt;
+@media print {
+  .has-continuation {
+    display: block !important;
+  }
+}
+&lt;/style&gt;
+
+$$
+`\begin{align}
+  \def\ci{\perp\mkern-10mu\perp}
+\end{align}`
+$$
+
+# Introduction
+
+---
+name: intro
+
+# Preface
+
+## 紹介している本について
+
+- これまで(少しは)読んだことがあるものを紹介
+- ある程度評判が高いものが多い
+
+## 簡単な振り返り
+
+- 計量経済学(特に統計的因果推論)を習得するための補助教材として使用
+- 統計学は難しい. 入門レベルでは, 数学的な計算は難しくなくても, 何をしているのか不明なことが多い
+- 岸田は多くの実践(データ分析)を経験し, 理解を深めることができた
+- 大数の法則と中心極限定理はとても大切
+- ネットには大学教授が公開している講義ノートPDFが溢れている(英語圏は特に豊富)
+
+
+---
+
+name: intro
+
+# 統計学と数学のバランス(個人的意見)
+
+## Balance between math and stats
+
+- レベルや嗜好により, 数学のテキストを使用すべきかどうかは異なる 
+- しかし, 線形代数と微積は必ず必要
+
+
+## Potential pitfalls
+
+- 数学にハマり, 数学ばかり勉強してしまう
+- 統計学における数学は, スポーツにおける筋トレ
+- ある程度必要だが, やりすぎても実践練習がなければ生かせない 
+
+
+## How to get started
+
+.hi[Plan 1:] 統計学入門書 &amp;rarr; 必要に応じて数学書 (線形と微積の基礎がある場合)   
+.hi[Plan 2:] 線形と微積テキストから(ベクトルや微分が.grey-vlight[全く]分からない場合)  
+.hi[Plan 3:] 1と2のmix. これが現実的?
+
+
+
+---
+layout: false
+class: middle, inverse
+
+# Statistics Textbooks
+---
+name: stats
+
+# 入門書
+
+.pull-left[
+.hi-slate[基本統計学(第3版)] [\[link\]](https://www.amazon.co.jp/%E5%9F%BA%E6%9C%AC%E7%B5%B1%E8%A8%88%E5%AD%A6-%E7%AC%AC3%E7%89%88-%E8%B0%B7%E5%B4%8E-%E4%B9%85%E5%BF%97/dp/4492470832/ref=sr_1_3?__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A&amp;dchild=1&amp;keywords=%E5%9F%BA%E6%9C%AC%E7%B5%B1%E8%A8%88%E5%AD%A6&amp;qid=1605936547&amp;s=books&amp;sr=1-3)
+&lt;br&gt;*谷崎他, 2010* 
+&lt;img src="stats1.jpg" width="48%" style="display: block; margin: auto;" /&gt;
+]
+.pull-right[
+.hi-slate[統計学入門 (基礎統計学Ⅰ) ] [\[link\]](https://www.amazon.co.jp/%E7%B5%B1%E8%A8%88%E5%AD%A6%E5%85%A5%E9%96%80-%E5%9F%BA%E7%A4%8E%E7%B5%B1%E8%A8%88%E5%AD%A6%E2%85%A0-%E6%9D%B1%E4%BA%AC%E5%A4%A7%E5%AD%A6%E6%95%99%E9%A4%8A%E5%AD%A6%E9%83%A8%E7%B5%B1%E8%A8%88%E5%AD%A6%E6%95%99%E5%AE%A4/dp/4130420658/ref=sr_1_1?__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A&amp;dchild=1&amp;keywords=%E7%B5%B1%E8%A8%88%E5%AD%A6%E5%85%A5%E9%96%80+%28%E5%9F%BA%E7%A4%8E%E7%B5%B1%E8%A8%88%E5%AD%A6%E2%85%A0%29&amp;qid=1605936912&amp;s=books&amp;sr=1-1)
+&lt;br&gt;*東京大学教養学部統計学教室, 1991* 
+&lt;img src="stats2.jpg" width="45%" style="display: block; margin: auto;" /&gt;
+]
+
+.pull-left[解説が丁寧でかなり分かりやすい. 文系学部の1~3年生レベル. 若干, 帯に短し襷に長しという感じ.]
+
+.pull-right[最も定番の入門書. 文系学部の2~4年生レベル. 統計検定の副読本としても有名. 入門書と言われている中では難しい方に分類. やり込めば力がつく.]
+
+
+---
+
+name: stats
+
+# 数理統計学.super[.pink[†]]
+
+.pull-left[
+.hi-slate[現代数理統計学の基礎] [\[link\]](https://www.amazon.co.jp/%E7%8F%BE%E4%BB%A3%E6%95%B0%E7%90%86%E7%B5%B1%E8%A8%88%E5%AD%A6%E3%81%AE%E5%9F%BA%E7%A4%8E-%E5%85%B1%E7%AB%8B%E8%AC%9B%E5%BA%A7-%E6%95%B0%E5%AD%A6%E3%81%AE%E9%AD%85%E5%8A%9B-%E4%B9%85%E4%BF%9D%E5%B7%9D-%E9%81%94%E4%B9%9F/dp/4320111664/ref=sr_1_4?__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A&amp;dchild=1&amp;keywords=%E6%95%B0%E7%90%86%E7%B5%B1%E8%A8%88%E5%AD%A6&amp;qid=1605939039&amp;sr=8-4)
+&lt;br&gt;*久保川, 2017* 
+&lt;img src="stats3.jpg" width="45%" style="display: block; margin: auto;" /&gt;
+]
+.pull-right[
+.hi-slate[計量経済学のための数学] [\[link\]](https://www.amazon.co.jp/%E8%A8%88%E9%87%8F%E7%B5%8C%E6%B8%88%E5%AD%A6%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AE%E6%95%B0%E5%AD%A6-%E7%94%B0%E4%B8%AD-%E4%B9%85%E7%A8%94/dp/4535559295/ref=sr_1_1?__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A&amp;crid=2G16XZAFF1IZU&amp;dchild=1&amp;keywords=%E8%A8%88%E9%87%8F%E7%B5%8C%E6%B8%88%E5%AD%A6%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AE%E6%95%B0%E5%AD%A6&amp;qid=1605939666&amp;sprefix=%E8%A8%88%E9%87%8F%E7%B5%8C%E6%B8%88%E5%AD%A6%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AE%2Caps%2C276&amp;sr=8-1)
+&lt;br&gt;*田中, 2019* 
+&lt;img src="stats4.jpg" width="45%" style="display: block; margin: auto;" /&gt;
+]
+
+.pull-left[前半で確率・積立母関数や多くの確率分布が紹介されている. 比較的解説が丁寧. 統計検定1級の副読本としても人気.]
+
+.pull-right[タイトルを数理統計学に置き換えても問題なし. 統計学に必要な集合, 線形代数, 期待値, 大数の法則, 中心極限定理がまとめられている.]
+
+.footnote[
+&lt;br&gt;.pink[†] そこそこの微積・線形代数の知識がないと読み進めることはできない.
+]
+
+
+
+---
+
+name: stats
+
+# 読み物
+
+.pull-left[
+.hi-slate[統計学が最強の学問である] [\[link\]](https://www.amazon.co.jp/%E7%B5%B1%E8%A8%88%E5%AD%A6%E3%81%8C%E6%9C%80%E5%BC%B7%E3%81%AE%E5%AD%A6%E5%95%8F%E3%81%A7%E3%81%82%E3%82%8B-%E8%A5%BF%E5%86%85-%E5%95%93/dp/4478022216)
+&lt;br&gt;*西内, 2013* 
+&lt;img src="stats5.jpg" width="48%" style="display: block; margin: auto;" /&gt;
+]
+.pull-right[
+.hi-slate[データ分析の力 因果関係に迫る思考法] [\[link\]](https://www.amazon.co.jp/%E3%83%87%E3%83%BC%E3%82%BF%E5%88%86%E6%9E%90%E3%81%AE%E5%8A%9B-%E5%9B%A0%E6%9E%9C%E9%96%A2%E4%BF%82%E3%81%AB%E8%BF%AB%E3%82%8B%E6%80%9D%E8%80%83%E6%B3%95-%E5%85%89%E6%96%87%E7%A4%BE%E6%96%B0%E6%9B%B8-%E4%BC%8A%E8%97%A4-%E5%85%AC%E4%B8%80%E6%9C%97-ebook/dp/B071CD9CMP/ref=sr_1_1?__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A&amp;dchild=1&amp;keywords=%E4%BC%8A%E8%97%A4%E3%81%93%E3%81%86%E3%81%84%E3%81%A1%E3%82%8D%E3%81%86&amp;qid=1605938677&amp;sr=8-1) *伊藤, 2017* 
+&lt;img src="stats6.jpg" width="45%" style="display: block; margin: auto;" /&gt;
+]
+
+
+.pull-left[統計学の歴史や, ビジネスや学術での応用について知れる. 寄り道本. ビジネス, 実践, 数学編も販売されている.]
+
+.pull-right[因果推論に関心があればぜひ...!]
+
+
+---
+layout: false
+class: inverse, middle
+
+# Probability Theory Textbooks
+---
+name: prob
+
+# 確率論.super[.pink[†]]
+
+.pull-left[
+.hi-slate[確率論 講義ノート] [\[link\]](https://www.amazon.co.jp/%E7%A2%BA%E7%8E%87%E8%AB%96-%E8%AC%9B%E7%BE%A9%E3%83%8E%E3%83%BC%E3%83%88-%E5%A0%B4%E5%90%88%E3%81%AE%E6%95%B0%E3%81%8B%E3%82%89%E7%A2%BA%E7%8E%87%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B%E5%BC%8F%E3%81%BE%E3%81%A7-%E5%A4%A7%E5%B9%B3-%E5%BE%B9/dp/4627077718/ref=sr_1_9?__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A&amp;dchild=1&amp;keywords=%E7%A2%BA%E7%8E%87%E8%AB%96&amp;qid=1605940377&amp;sr=8-9)
+&lt;br&gt;*太平, 2017* 
+&lt;img src="prob1.jpg" width="48%" style="display: block; margin: auto;" /&gt;
+]
+.pull-right[
+.hi-slate[測度・確率・ルベーグ積分] [\[link\]](https://www.amazon.co.jp/%E6%B8%AC%E5%BA%A6%E3%83%BB%E7%A2%BA%E7%8E%87%E3%83%BB%E3%83%AB%E3%83%99%E3%83%BC%E3%82%B0%E7%A9%8D%E5%88%86-%E5%BF%9C%E7%94%A8%E3%81%B8%E3%81%AE%E6%9C%80%E7%9F%AD%E3%82%B3%E3%83%BC%E3%82%B9-KS%E7%90%86%E5%B7%A5%E5%AD%A6%E5%B0%82%E9%96%80%E6%9B%B8-%E5%8E%9F-%E5%95%93%E4%BB%8B/dp/4061565710/ref=sr_1_12?__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A&amp;dchild=1&amp;keywords=%E7%A2%BA%E7%8E%87%E8%AB%96&amp;qid=1605940377&amp;sr=8-12)
+&lt;br&gt;*原, 2017* 
+&lt;img src="prob2.jpg" width="45%" style="display: block; margin: auto;" /&gt;
+]
+
+
+.pull-left[確率とは何かを知りたい場合に. 古典的・公理的アプローチ. ベイズも少し知れる.]
+
+.pull-right[確率論の基礎づけに必要な測度論の本. 岸田はすぐ挫折. E資格の勉強としてはいいかも?]
+
+.footnote[
+&lt;br&gt;.pink[†] 確率論入門というようなタイトルのテキストもあるが, 入門レベルは統計学テキストに含まれている章で十分であると思う. これらの本は中級あたり.
+]
+
+
+---
+layout: false
+class: inverse, middle
+
+# Mathematics Textbooks
+---
+name: math
+
+# 線形代数・微分積分
+
+.pull-left[
+.hi-slate[手を動かしてまなぶ 線形代数] [\[link\]](https://www.shokabo.co.jp/mybooks/ISBN978-4-7853-1564-1.htm)
+&lt;br&gt;*藤岡, 2015* 
+&lt;img src="math1.jpg" width="48%" style="display: block; margin: auto;" /&gt;
+]
+.pull-right[
+.hi-slate[手を動かしてまなぶ 微分積分] [\[link\]](https://www.shokabo.co.jp/mybooks/ISBN978-4-7853-1581-8.htm)
+&lt;br&gt;*藤岡, 2019* 
+&lt;img src="math2.jpg" width="48%" style="display: block; margin: auto;" /&gt;
+]
+
+
+.pull-left[本文と練習問題の解答解説が懇切丁寧. マセマ(次ページ)が入門書では最も有名だが, 個人的にはこれがおすすめ.]
+
+.pull-right[こちらは使用していないが, 同じ著者のため, 良書間違いなしと思われる.]
+
+
+
+---
+name: math
+
+# 線形代数・微分積分
+
+.pull-left[
+.hi-slate[線形代数キャンパス・ゼミ] [\[link\]](https://www.amazon.co.jp/%E7%B7%9A%E5%BD%A2%E4%BB%A3%E6%95%B0%E3%82%AD%E3%83%A3%E3%83%B3%E3%83%91%E3%82%B9%E3%83%BB%E3%82%BC%E3%83%9F-%E6%94%B9%E8%A8%828-%E9%A6%AC%E5%A0%B4-%E6%95%AC%E4%B9%8B/dp/4866151633/ref=sr_1_2?__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A&amp;dchild=1&amp;keywords=%E7%B7%9A%E5%BD%A2%E4%BB%A3%E6%95%B0&amp;qid=1605943690&amp;sr=8-2)
+&lt;br&gt;*馬場, 2020* 
+&lt;img src="math3.jpg" width="48%" style="display: block; margin: auto;" /&gt;
+]
+.pull-right[
+.hi-slate[チャート式シリーズ 大学教養 微分積分] [\[link\]](https://www.amazon.co.jp/%E3%83%81%E3%83%A3%E3%83%BC%E3%83%88%E5%BC%8F%E3%82%B7%E3%83%AA%E3%83%BC%E3%82%BA-%E5%A4%A7%E5%AD%A6%E6%95%99%E9%A4%8A-%E5%BE%AE%E5%88%86%E7%A9%8D%E5%88%86-%E3%83%81%E3%83%A3%E3%83%BC%E3%83%88%E5%BC%8F%E3%83%BB%E3%82%B7%E3%83%AA%E3%83%BC%E3%82%BA-%E5%8A%A0%E8%97%A4/dp/4410152300/ref=pd_bxgy_img_2/355-9334085-1520134?_encoding=UTF8&amp;pd_rd_i=4410152300&amp;pd_rd_r=da1eafd6-1dbc-4265-8ce7-b6626df7ccca&amp;pd_rd_w=XDPbz&amp;pd_rd_wg=npg0Q&amp;pf_rd_p=e64b0a81-ca1b-4802-bd2c-a4b65bccc76e&amp;pf_rd_r=RVVFGM6CR24S50C9Y9M1&amp;psc=1&amp;refRID=RVVFGM6CR24S50C9Y9M1)
+*加藤, 2019* 
+&lt;img src="math4.jpg" width="48%" style="display: block; margin: auto;" /&gt;
+]
+
+
+.pull-left[長く定番となっているマセマシリーズ. 文系学部1~2年レベルの範囲をカバー. 微分積分版もある.]
+
+.pull-right[昨年出版であるのに, 数学書としてはAmazonレビューが異常(現在68). 神本としてTwitterでも盛り上がり, 学生や大人が購入していた. 線形代数版もある.]
+
+
+---
+name: math
+
+# 線形代数・微分積分
+
+.pull-left[
+.hi-slate[線形代数学（新装版）] [\[link\]](https://www.amazon.co.jp/%E7%B7%9A%E5%BD%A2%E4%BB%A3%E6%95%B0%E5%AD%A6%EF%BC%88%E6%96%B0%E8%A3%85%E7%89%88%EF%BC%89-%E5%B7%9D%E4%B9%85%E4%BF%9D-%E5%8B%9D%E5%A4%AB/dp/4535786542/ref=sr_1_13?__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A&amp;dchild=1&amp;keywords=%E7%B7%9A%E5%BD%A2%E4%BB%A3%E6%95%B0&amp;qid=1605944368&amp;sr=8-13)
+&lt;br&gt;*川久保, 2010* 
+&lt;img src="math5.jpg" width="48%" style="display: block; margin: auto;" /&gt;
+]
+.pull-right[
+.hi-slate[基礎数学1 線型代数入門] [\[link\]](https://www.amazon.co.jp/%E5%9F%BA%E7%A4%8E%E6%95%B0%E5%AD%A61%E7%B7%9A%E5%9E%8B%E4%BB%A3%E6%95%B0%E5%85%A5%E9%96%80-%E9%BD%8B%E8%97%A4%E6%AD%A3%E5%BD%A6-ebook/dp/B07HWS9GTK/ref=sr_1_4?__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A&amp;dchild=1&amp;keywords=%E7%B7%9A%E5%BD%A2%E4%BB%A3%E6%95%B0&amp;qid=1605944368&amp;sr=8-4)
+&lt;br&gt;*齋藤, 2019* 
+&lt;img src="math6.jpg" width="48%" style="display: block; margin: auto;" /&gt;
+]
+
+
+.pull-left[マセマやチャート式よりは若干難しい. 軽くかじった程度. 主に副読本として利用. 右のテキストとどちらか1冊あれば良いくらい (岸田なら買わない).]
+
+.pull-right[左と同じ.]
+
+
+---
+
+
+exclude: true
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
