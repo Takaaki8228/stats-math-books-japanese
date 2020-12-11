@@ -423,6 +423,5 @@ exclude: true
 
 ```{R, generate pdfs, include = F, eval = T}
 pagedown::chrome_print("math_stats_book.html", output = "math_stats_book.pdf")
-pagedown::chrome_print("math_stats_book.html", output = "math_stats_book-nopause.pdf")
 ```
 
